@@ -34,6 +34,20 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
+
+<!-- workaround for jdk-8 fault -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.22.1</version>
+        <configuration>
+          <useSystemClassLoader>false</useSystemClassLoader>
+        </configuration>
+      </plugin>
+
+
+
+
 		</plugins>
 
 		<resources>
