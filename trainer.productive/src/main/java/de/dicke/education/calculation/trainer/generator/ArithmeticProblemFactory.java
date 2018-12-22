@@ -26,12 +26,12 @@ public class ArithmeticProblemFactory {
 		SEQ_ADD, SEQ_SUB, WHAT_SEQ, PUNKT_VOR_STRICH, PLATZHALTER_ADD, PLATZHALTER_SUB, PLATZHALTER_MULT;
 	}
 
-//	protected List<Types> listOfTypes = new ArrayList<Types>(Arrays.asList(Types.ROUND_UP_DOWN_10, Types.ROUND_UP_DOWN_100, 
-//			Types.PLATZHALTER_MULT, Types.QUERSUMME, Types.SIMPLE_ADD_HIGH,
-//			Types.PUNKT_VOR_STRICH, Types.SIMPLE_SUB_HIGH, Types.PLATZHALTER_ADD_HIGH, Types.PLATZHALTER_SUB_HIGH,
-//			Types.MULTIPLE_ADD, Types.PUNKT_VOR_STRICH));
+	protected List<Types> listOfTypes = new ArrayList<Types>(Arrays.asList(Types.ROUND_UP_DOWN_10, Types.ROUND_UP_DOWN_100, 
+			Types.PLATZHALTER_MULT, Types.QUERSUMME, Types.SIMPLE_ADD_HIGH,
+			Types.PUNKT_VOR_STRICH, Types.SIMPLE_SUB_HIGH, Types.PLATZHALTER_ADD_HIGH, Types.PLATZHALTER_SUB_HIGH,
+			Types.MULTIPLE_ADD, Types.PUNKT_VOR_STRICH));
 
-	protected List<Types> listOfTypes = new ArrayList<Types>(Arrays.asList( Types.SIMPLE_ADD, Types.SIMPLE_SUB));
+//	protected List<Types> listOfTypes = new ArrayList<Types>(Arrays.asList( Types.SIMPLE_ADD, Types.SIMPLE_SUB));
 	
 	ListIterator<Types> iter;
 

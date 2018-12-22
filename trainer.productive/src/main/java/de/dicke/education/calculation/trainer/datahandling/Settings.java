@@ -9,8 +9,8 @@ public class Settings extends SettingsImpl {
 	}
 
 	public void setDefaults () throws SQLException {
-		int secondsPerCorrectAnswer = 30;
-		int maxAllowedSecondsForAnswer = 30;
+		int secondsPerCorrectAnswer = 10;
+		int maxAllowedSecondsForAnswer = 20;
 		int penaltySeconds = (int) (secondsPerCorrectAnswer * 0.9);
 		boolean penaltyOn = true;
 		long accumulatedSecondsBeforeVideoIsShown = 180L; 
