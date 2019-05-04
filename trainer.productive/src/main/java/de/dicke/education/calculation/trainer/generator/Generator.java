@@ -89,6 +89,28 @@ public class Generator {
 		FormulaDTO formulaDTO = new FormulaDTO(formula, String.valueOf(num1));
 		return formulaDTO;
 	}
+	
+	public FormulaDTO generate_nachbarZahl(int num1Min, int num1Max, int exponent)
+			throws SQLException {
+		String formula = "";
+		if (exponent < 1 || exponent > 10 ) {
+			throw new IllegalArgumentException("value for exponent exceeded boundaries:" + exponent);
+		} else {
+			int zahl = (int) Math.pow(10, exponent);
+		}
+
+		
+		int result;
+		do {
+			result = getRandom(num1Min, num1Max);
+
+		} while (result > settings.getMaxResult() || result < settings.getMinResult());
+
+		formula = "Was sind die Nachbar "+ (int) Math.pow(10, exponent) + "-er von " + result + " (Unterer Nachbar|Oberer Nachbar))?";
+		FormulaDTO formulaDTO = new FormulaDTO(formula, String.valueOf(result));
+		return formulaDTO;
+	}
+	
 
 	public FormulaDTO generate_simpleSequence(int startMin, int startMax, int stepMin, int stepMax, int number,
 			char operation) throws SQLException {

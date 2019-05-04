@@ -7,6 +7,8 @@ import static org.powermock.api.mockito.PowerMockito.when;
 
 import java.sql.SQLException;
 
+import javax.swing.plaf.synth.SynthStyleFactory;
+
 import org.apache.commons.lang.StringUtils;
 import org.junit.Before;
 import org.junit.Test;
@@ -28,6 +30,20 @@ public class GeneratorTest {
 		generator = new Generator();
 
 	}
+	
+	@Test
+	public final void testNachbarZahl() {
+		FormulaDTO formula = null; 
+		
+		try {
+			formula = generator.generate_nachbarZahl(1, 10, 2);
+		} catch (SQLException e) {
+			e.printStackTrace();
+			fail ();
+		}
+		formula.print();
+	}
+	
 
 	@Test
 	public final void testMakeFormula() {

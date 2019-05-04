@@ -59,13 +59,15 @@
 
 	</build>
 
+<!-- 
 	<repositories>
 		<repository>
 			<id>xuggle repo</id>
 			<url>https://files.liferay.com/mirrors/xuggle.googlecode.com/svn/trunk/repo/share/java/</url>
 		</repository>
 	</repositories>
-
+ -->
+ 
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/commons-lang/commons-lang -->
 		<dependency>
@@ -86,12 +88,14 @@
 			<scope>test</scope>
 		</dependency>
 
+<!-- 
 		<dependency>
 			<groupId>xuggle</groupId>
 			<artifactId>xuggle-xuggler</artifactId>
 			<version>5.4</version>
 		</dependency>
-
+ -->
+ 
 		<!-- VLCJ dependencies -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
